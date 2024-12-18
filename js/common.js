@@ -102,13 +102,7 @@ $(function(){
     step++;
     if(step >= totalStep){ //全部做完
       let myType = getType();
-      $(`#${id}`).find('.answer__btn').text('測驗結果').attr('href',`result.htm?type=${myType}`);
-		
-			gtag('event', `結果頁-${myType}`, {
-			  'event_category': "結果頁",
-			  'send_to': ['G-WPZM3X3PZH'] //業務活動專用	
-			});  
-		
+      $(`#${id}`).find('.answer__btn').text('測驗結果').attr('href',`result.htm?type=${myType}`);	
 		
     }    
     
